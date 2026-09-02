@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.Aggrometer/aggrometer",
+  "description": "The gaming attention graph: live Steam players, Twitch + YouTube viewership, the aggro ratio (viewers/players), genre rollups, pre-release hype, and per-game history for ~2,000 games.",
+  "repository": {
+    "url": "https://github.com/Aggrometer/aggrometer",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://aggrometer.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aggrometer.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <Aggrometer API key> - get one at https://aggrometer.com/#pricing (Basic $3.99/mo, Pro $29/mo, or prepaid credits)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

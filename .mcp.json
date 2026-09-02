@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "aggrometer": {
+      "url": "https://aggrometer.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${AGGROMETER_API_KEY}"
+      }
+    }
+  }
+}
