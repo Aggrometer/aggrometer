@@ -1,6 +1,6 @@
 # Aggrometer — the gaming attention graph
 
-**Live cross-platform gaming market data for humans and AI agents.** Aggrometer continuously measures ~2,000 games: **Steam concurrent players** (hourly), **Twitch viewership** (15-min), **YouTube live viewership** (2-hourly), plus prices, discounts, top-seller ranks, clip velocity, review counts, and pre-release hype — joined per game.
+**Live cross-platform gaming market data for humans and AI agents.** Aggrometer continuously measures ~2,000 games: **Steam concurrent players** (hourly) and **Twitch live viewership** (15-min, game-level aggregates), plus prices, discounts, top-seller ranks, clip velocity, review counts, and pre-release hype — joined per game.
 
 **Signature metric: `aggro` = live viewers ÷ concurrent players, same hour.** Above 1.0, a game holds more audience than players — the signal that streamer marketing converts, that a spectacle moment is happening, or that attention is arriving ahead of sales.
 
@@ -43,7 +43,7 @@ This repo ships a [.mcp.json](.mcp.json) — set the `AGGROMETER_API_KEY` enviro
 Same key, plain JSON:
 
 ```bash
-curl -H "Authorization: Bearer YOUR_KEY" "https://aggrometer.com/v1/boards/aggro?genre=RPG&platform=twitch"
+curl -H "Authorization: Bearer YOUR_KEY" "https://aggrometer.com/v1/boards/aggro?genre=RPG"
 ```
 
 Full endpoint index (self-describing, no auth): [`GET /v1`](https://aggrometer.com/v1) · [OpenAPI spec](https://aggrometer.com/v1/openapi.json)
@@ -55,13 +55,13 @@ Pay-per-query without an Aggrometer key: [apify.com/aggrometer/aggrometer-gaming
 ## Who uses this
 
 - **Game developers & publishers** — genre whitespace, launch scouting, competitor attention
-- **Marketing & influencer agencies** — streamer vetting, single-channel dependency risk, platform mix
+- **Marketing teams** — watched-vs-played balance, per game and genre
 - **Analysts & press** — attention momentum, hype pipelines, discount effects
 - **AI agents** — all of the above, autonomously
 
 ## Data notes
 
-Derived aggregates and estimates only — no personal data, no raw platform-data resale. History accrues continuously since 2026-08-26. Sparse series indicate a young warehouse, not missing coverage.
+Game-level derived aggregates and estimates only. History accrues continuously since 2026-08-26; sparse series indicate a young warehouse, not missing coverage. Live viewership data provided by Twitch; anticipation data provided by IGDB.com.
 
 ## Support
 

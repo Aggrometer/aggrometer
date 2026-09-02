@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "io.github.Aggrometer/aggrometer",
-  "description": "The gaming attention graph: live Steam players, Twitch + YouTube viewership, the aggro ratio (viewers/players), genre rollups, pre-release hype, and per-game history for ~2,000 games.",
+  "description": "The gaming attention graph: Steam players, Twitch live viewers, aggro ratio, hype, history.",
   "repository": {
     "url": "https://github.com/Aggrometer/aggrometer",
     "source": "github"
