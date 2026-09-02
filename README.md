@@ -61,7 +61,7 @@ Pay-per-query without an Aggrometer key: [apify.com/aggrometer/aggrometer-gaming
 
 ## Data notes
 
-Game-level derived aggregates and estimates only. History accrues continuously since 2026-08-26; sparse series indicate a young warehouse, not missing coverage. Live viewership data provided by Twitch; anticipation data provided by IGDB.com.
+Game-level derived aggregates and estimates only. History accrues continuously since 2026-08-26; sparse series indicate a young warehouse, not missing coverage. Live viewership data provided by Twitch; the anticipation score is Aggrometer's own composite index (Steam wishlist rank + pre-release Twitch attention).
 
 ## Support
 
